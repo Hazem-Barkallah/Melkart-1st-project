@@ -1,0 +1,217 @@
+body{
+    background-color: rgb(23, 28, 54);
+    font-family: "Montserrat",sans-serif;
+}
+.entete1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+    margin-left: -10px;
+    margin-bottom: -25px ;
+    background-color: black;
+}
+.champ1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    margin-top: -20px;
+
+}
+#longtext1{
+    max-width: 700px;
+    text-align: center;
+    color: aliceblue;
+    margin-top: -40px;
+    font-weight: 50;
+}
+#logo1{
+   height: 80px;
+   width: 80px;
+}
+.body1{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(228, 212, 212);
+    margin-left: -12px;
+    margin-top: -30px;
+    margin-right: -15px;
+    border: solid;
+    border-width: 5px;
+    border-color: rgb(60, 92, 139);
+    height: 550px;
+}
+#quest1{
+   max-width: 500px;
+   margin-left: 50px;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 10;
+   font-size: 28px;
+   color: rgb(13, 15, 27);
+   text-decoration: underline;
+}
+#liste1{
+    margin-left: 10%;
+    background-color: #a79e9e;
+    margin-top: 50px;
+    width: 500px;
+    border-radius: 7px;
+    height: 250px ;
+    box-shadow: 7px 7px 7px #575353;
+}
+.login{
+    border: 1px solid black;
+    width: 400px;
+    height: 500px;
+    background: url('Bureau\ Melkart.jpg'); 
+    background-repeat: no-repeat;  
+    background-size: 500px 400px;
+    background-position: center;
+    margin-top: 18px;
+    margin-right: 20px;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    height: 100%;
+    backdrop-filter: brightness(40%);
+    gap: 5px;
+}
+h1{
+    font-weight: normal;
+    font-size: 24px;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    margin-top: -20px;
+    align-self: center;
+}
+label{
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+input{
+    background: rgba(255, 255, 255, 0.3);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 20px;
+    color: white;
+}
+button{
+    background: rgb(45, 126, 231);
+    height: 40px;
+    width: 100px;
+    line-height: 40px;
+    border-radius: 20px;
+    border: none;
+    align-self: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    color: white;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+}
+button:hover{
+    background: rgb(47, 55, 66);
+    box-shadow: 0px 0px 5px rgb(45, 126, 231);
+}
+button:active{
+    box-shadow: 0px 0px 15px rgb(0, 110, 255);
+}
+.login:hover{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 1);
+    transform: scale(1.03);
+}
+.tsawer{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-left: 20px;
+}
+.img{
+    display: flex;
+    max-width: 200px;
+    gap: 30px;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+.tsawer:hover{
+    transform: scale(1.2);
+}
+.input{
+    background-color: rgb(207, 199, 199);
+    height: 30px;
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 7px;
+    border-color: rgb(236, 21, 21);
+    box-shadow: inset;
+    border:none;
+    box-shadow: 5px 5px 5px #a79e9e;
+}
+#text1{
+    height: 100px; 
+}
+.body2{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#quest2{
+    font-family: Arial, Helvetica, sans-serif;
+   font-weight: 10;
+   font-size: 25px;
+   color: aliceblue;
+   text-align: center;
+}
+#img2{
+    height: 400px;
+    width: 500px;
+    align-self: center;
+    border-radius: 7px;
+    border:none;
+}
+.button{
+    background-color: #919191;
+    height: 35px;
+    width: 50px;
+    border-radius: 200px;
+    position: relative;
+    cursor: pointer;
+}
+#check{
+    height: 1px;
+    width: 1px;
+}
+.checkbox{
+    display: flex;
+    justify-content: center;
+}
+.button::before{
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 34px;
+    height: 34px;
+    border-radius: 200px;
+    margin-left: -10px;
+    transition: transform 0.3s ease;
+}
+input:checked + .button{
+    background-color: rgb(33, 218, 33);
+}
+input:checked + .button::before{
+    transform: translateX(30px);
+}
